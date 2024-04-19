@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let xmlHttp;
+
+        try {
+            xmlHttp = new XMLHttpRequest();
+        } catch (y) {
+            try {
+                xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
+            } catch (y) {
+               try {
+                xmlHttp = new ActiveXObject('microsoft.XMLHTTP');
+               } catch (y) {
+                alert('su navegador no soporta ajax');
+                return false;
+               } 
+            }
+        }
+
+
+
+    </script>
+
+
+
+
+    <form name="myform" action="">
+        Nombre:<input type="text" name="usuario" id="">
+        Equipo:<input type="text" name="equipo" id="">
+    </form>
+</body>
+</html>

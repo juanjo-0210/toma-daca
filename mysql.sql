@@ -1,0 +1,1 @@
+SELECT * FROM trueque.productos WHERE idproductos = '59';
